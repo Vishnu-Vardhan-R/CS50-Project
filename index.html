@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Chat Box</title>
+</head>
+<body>
+    <div class="alert alert-dark" role="alert">
+        <h2 style='text-align:center; padding:10px;'>Welcome to the most simple and basic chat box <span class="badge badge-secondary"></span></h2>
+    </div>
+
+    <div id="head">
+        <div id='output' style='padding:20px'></div>
+    </div>
+
+    <div style='padding:15px' class="input-group mb-3">
+        <!-- <input id='name' type="text" class="form-control" placeholder="Enter your name" aria-label="Recipient's username" aria-describedby="basic-addon2"> -->
+        <input type="text" class="form-control" placeholder="Enter a message" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <span class="input-group-text" id="basic-addon2">Send</span>
+        </div>
+    </div>
+
+    <!-- Importing socket.io library for the client -->
+    <!-- <script src='/node_modules/socket.io-client/dist/socket.io.js'></script> -->
+    <script src="socket.io/socket.io.js"></script>
+    <!-- <script src='index.js'></script> -->
+    <script src='app.js'></script>
+    
+   
+</body>
+</html>
